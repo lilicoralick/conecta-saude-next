@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conecta Saúde | Equipe</title>
+<meta name="description" content="Conecta Saúde: o SUS na palma da mão, com IA que orienta o cidadão para o lugar certo.">
+<meta property="og:title" content="Conecta Saúde | Conheça a equipe">
+<meta property="og:description" content="IA que orienta o cidadão: SAMU, UPA ou UBS. Projeto HackGov FIAP.">
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header class="topo">
+  <img class="logo" src="simbolo.png" alt="Conecta Saúde">
+  <div class="selo">HackGov · FIAP</div>
+  <h1>Conecta Saúde</h1>
+  <p class="frase" id="frase"></p>
+</header>
+<main>
+  <section class="cartao">
+    <p class="titulo-secao">Conheça a equipe</p>
+    <div id="equipe"></div>
+  </section>
+
+  <section class="cartao">
+    <p class="titulo-secao">O projeto em 30 segundos</p>
+    <ul class="lista-fatos">
+      <li><b>01</b> O cidadão descreve o que sente com as próprias palavras.</li>
+      <li><b>02</b> A IA, com uma trava de segurança, indica SAMU, UPA ou UBS.</li>
+      <li><b>03</b> A fila da UPA é organizada por gravidade (Protocolo de Manchester).</li>
+      <li><b>04</b> O gestor vê indicadores de faltas e espera para decidir com dados.</li>
+    </ul>
+  </section>
+
+  <section class="cartao">
+    <p class="titulo-secao">Veja mais</p>
+    <a class="botao primario" id="video" target="_blank" rel="noopener">Assistir ao vídeo do projeto</a>
+    <a class="botao secundario" id="front" target="_blank" rel="noopener">Código no GitHub</a>
+  </section>
+
+  <p class="rodape">Projeto acadêmico · Sistemas de Informação · FIAP 2026</p>
+</main>
+<script src="membros.js"></script>
+<script>
+  document.getElementById("frase").textContent = PROJETO.frase;
+  const pronto = (u) => u && !u.startsWith("COLE_AQUI");
+  const v = document.getElementById("video");
+  if (pronto(PROJETO.video)) v.href = PROJETO.video; else v.style.display = "none";
+  document.getElementById("front").href = PROJETO.frontend;
+  const alvo = document.getElementById("equipe");
+  MEMBROS.filter(m => m.mostrar).forEach(m => {
+    const a = document.createElement("a");
+    a.className = "pessoa";
+    a.href = m.id + ".html";
+    a.innerHTML = `<div class="avatar">${m.primeiroNome[0]}</div>
+      <div><strong></strong><span></span></div><div class="seta">›</div>`;
+    a.querySelector("strong").textContent = m.nome;
+    a.querySelector("span").textContent = m.rotulo;
+    alvo.appendChild(a);
+  });
+</script>
+</body>
+</html>

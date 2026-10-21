@@ -1,0 +1,33 @@
+:root{--azul:#1558f5;--ciano:#12c6f0;--noite:#001534;--texto:#0f1b33;--suave:#5b6b88;--fundo:#f4f7fd;--cartao:#ffffff;--borda:#e3e9f5}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--fundo);color:var(--texto);min-height:100vh;-webkit-font-smoothing:antialiased}
+.topo{background:radial-gradient(120% 90% at 85% 0%,#2a7bff 0%,var(--azul) 35%,var(--noite) 100%);color:#fff;padding:40px 20px 88px;text-align:center;position:relative;overflow:hidden}
+.topo::after{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.18) 1px,transparent 1px);background-size:18px 18px;mask-image:linear-gradient(to bottom,rgba(0,0,0,.6),transparent);pointer-events:none}
+.logo{display:block;margin:0 auto;width:64px;height:auto;filter:drop-shadow(0 6px 18px rgba(0,0,0,.25))}
+.selo{display:inline-block;margin-top:14px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);padding:6px 12px;border-radius:999px}
+h1{font-size:30px;line-height:1.15;margin-top:14px;font-weight:800;letter-spacing:-.02em}
+.frase{max-width:420px;margin:10px auto 0;font-size:15px;line-height:1.5;color:rgba(255,255,255,.88)}
+main{max-width:480px;margin:-60px auto 0;padding:0 16px 40px;position:relative;z-index:1}
+.cartao{background:var(--cartao);border:1px solid var(--borda);border-radius:20px;padding:22px;box-shadow:0 12px 40px rgba(0,21,52,.10)}
+.cartao+.cartao{margin-top:14px}
+.titulo-secao{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--azul);margin-bottom:12px}
+.botao{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:52px;border-radius:14px;font-weight:700;font-size:16px;text-decoration:none;transition:transform .12s ease,box-shadow .12s ease}
+.botao:active{transform:scale(.98)}
+.primario{background:var(--azul);color:#fff;box-shadow:0 8px 22px rgba(21,88,245,.35)}
+.secundario{background:#eef3ff;color:var(--azul)}
+.botao+.botao{margin-top:10px}
+.pessoa{display:flex;align-items:center;gap:12px;padding:12px;border-radius:14px;text-decoration:none;color:inherit;border:1px solid var(--borda)}
+.pessoa+.pessoa{margin-top:10px}
+.avatar{flex:none;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--azul),var(--ciano))}
+.pessoa strong{display:block;font-size:15px}
+.pessoa span{font-size:13px;color:var(--suave)}
+.seta{margin-left:auto;color:var(--azul);font-weight:800}
+.ola{font-size:15px;color:rgba(255,255,255,.85);margin-top:18px}
+.nome-grande{font-size:34px;font-weight:800;letter-spacing:-.02em;margin-top:4px}
+.dica{font-size:13px;color:var(--suave);text-align:center;margin-top:12px;line-height:1.5}
+.lista-fatos{list-style:none;display:grid;gap:10px}
+.lista-fatos li{display:flex;gap:10px;font-size:14px;line-height:1.45}
+.lista-fatos b{color:var(--azul)}
+.rodape{text-align:center;font-size:12px;color:var(--suave);margin-top:22px}
+.aviso{display:none;margin-top:10px;font-size:12px;color:#b42318;text-align:center}
+svg{flex:none}

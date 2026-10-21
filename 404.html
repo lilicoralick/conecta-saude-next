@@ -1,0 +1,9 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>Conecta Saúde</title>
+<script>
+  // Se alguém abrir /livia/ (endereço antigo), manda para livia.html
+  var partes = location.pathname.split("/").filter(Boolean);
+  var ids = ["livia","bruna","gabriela","michael","davi"];
+  var ultimo = partes[partes.length-1];
+  var base = "/" + partes[0] + "/";
+  location.replace(ids.indexOf(ultimo) >= 0 ? base + ultimo + ".html" : base);
+</script></head><body></body></html>
