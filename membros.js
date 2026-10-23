@@ -15,7 +15,7 @@ window.PROJETO = {
 
 window.MEMBROS = [
   { id: "livia",    nome: "Lívia Scoralick",                 primeiroNome: "Lívia",    rotulo: "Conectar no LinkedIn", link: "https://www.linkedin.com/in/liliscoralick/", mostrar: true },
-  { id: "davi",     nome: "Davi Grabalos",                   primeiroNome: "Davi",     rotulo: "Ver meu portfólio",    link: "https://www.linkedin.com/in/davi-grabalos-galv%C3%A3o-14a76328b/", mostrar: true },
+  { id: "davi",     nome: "Davi Grabalos",                   primeiroNome: "Davi",     rotulo: "Ver meu portfólio",    link: "https://davigrabalos-portfolio.vercel.app/projects", mostrar: true },
   { id: "bruna",    nome: "Bruna Boschi Santos",             primeiroNome: "Bruna",    rotulo: "Conectar no LinkedIn", link: "https://www.linkedin.com/in/bruna-boschi-983260184", mostrar: true },
   { id: "gabriela", nome: "Gabriela de Carvalho Gonçalves",  primeiroNome: "Gabriela", rotulo: "Conectar no LinkedIn", link: "https://www.linkedin.com/in/gabrieladcrvlh", mostrar: true },
   { id: "michael",  nome: "Michael Marotto",                 primeiroNome: "Michael",  rotulo: "Conectar no LinkedIn", link: "https://www.linkedin.com/in/michael-marotto-490126275/", mostrar: true },
