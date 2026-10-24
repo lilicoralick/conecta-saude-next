@@ -8,7 +8,7 @@
 window.PROJETO = {
   nome: "Conecta Saúde",
   frase: "O SUS na palma da mão: IA que orienta o cidadão para o lugar certo, na hora certa.",
-  video: "COLE_AQUI_LINK_DO_YOUTUBE",
+  video: "https://youtu.be/zXK-plKfdD8?is=afGwOl-Mh06xWHIu",
   frontend: "https://github.com/gt-hackgov/conecta-saude",
   backend: "https://github.com/gt-hackgov/conectasaudebe",
 };
